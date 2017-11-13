@@ -33,6 +33,11 @@ There are some tricks as bare mac os bash abd byobu/tmux implement keyboard hand
 For example: `\0331;1P` is recognised as <kbd>F1</kbd> in `byobu/tmux`, but is not a valid
 combination in bash itself, as `\033OP` works for both.
 
+Another thing to try might be disabling the default shortcuts in the Keyboard section of System Preferences. E.g. for some users `ctrl-F2` moves the focus to the menu bar and prevents the usage of `ctrl-shift-F2` for creating a new session.
+
+## Incorporating with an existing profile
+
+Simply export your current prefered profile (Preferences|Profile| * |Export...) and open its xml file in a text editor. Then paste in the key `keyMapBoundKeys` along with the dict of keyboard options. Then save and re-import the profile.
 
 # Full list of all bindings
 
